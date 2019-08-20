@@ -1,4 +1,4 @@
-@using Microsoft.AspNetCore.Identity 
+﻿@using Microsoft.AspNetCore.Identity 
 @using GoldenTicket.Models
 @using GoldenTicket.Data
 @inject SignInManager<Technician> SignInManager 
@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@ViewData["Title"] - Golden Ticket</title>
+    <title>@ViewData["Title"] - Kalahari Tickets</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
@@ -18,9 +18,9 @@
 </head>
 
 <body>
-    <nav class="purple darken-4">
-        <div class="nav-wrapper purple darken-4 container">
-            <a class="brand-logo hide-on-med-and-down"><strong class="amber-text text-darken-2"> The Golden Ticket</strong> </a>
+    <nav class="green darken-4">
+        <div class="nav-wrapper green darken-4 container">
+            <a class="brand-logo hide-on-med-and-down"><strong class="amber-text text-lighten-1"> Kalahari Tickets </strong> </a>
             <ul class="right amber-text text-darken-2">
                 @if (SignInManager.IsSignedIn(User)) {
                 <li class="nav-item amber-text text-darken-2" >
