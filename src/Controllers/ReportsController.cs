@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using GoldenTicket.Data;
-using GoldenTicket.Models;
-using GoldenTicket.Models.ReportsViewModels;
+using KalahariTickets.Data;
+using KalahariTickets.Models;
+using KalahariTickets.Models.ReportsViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace GoldenTicket.Controllers
+namespace KalahariTickets.Controllers
 {
     /// <summary>
     /// For handling reports
@@ -18,13 +18,13 @@ namespace GoldenTicket.Controllers
     [Authorize(Roles = DataConstants.AdministratorRole)]
     public class ReportsController : Controller
     {
-        private GoldenTicketContext _context;
+        private KalahariTicketsContext _context;
 
         /// <summary>
         /// Initializes this controller
         /// </summary>
         /// <param name="context">context of the technician</param>
-        public ReportsController(GoldenTicketContext context)
+        public ReportsController(KalahariTicketsContext context)
         {
             _context = context;
         }

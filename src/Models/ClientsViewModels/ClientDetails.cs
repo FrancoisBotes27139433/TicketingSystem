@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using GoldenTicket.Models;
+using KalahariTickets.Models;
 
-namespace GoldenTicket.Models.ClientsViewModels
+namespace KalahariTickets.Models.ClientsViewModels
 {
     /// <summary>
     /// Client details request model

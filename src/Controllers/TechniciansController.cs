@@ -1,14 +1,14 @@
 using System;
 using System.Threading.Tasks;
-using GoldenTicket.Data;
-using GoldenTicket.Models;
-using GoldenTicket.Models.TechniciansViewModels;
+using KalahariTickets.Data;
+using KalahariTickets.Models;
+using KalahariTickets.Models.TechniciansViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace GoldenTicket.Controllers
+namespace KalahariTickets.Controllers
 {
     /// <summary>
     /// Controller for technicians
@@ -16,7 +16,7 @@ namespace GoldenTicket.Controllers
     [Authorize(Roles = DataConstants.AdministratorRole)]
     public class TechniciansController : Controller
     {
-        private GoldenTicketContext _context;
+        private KalahariTicketsContext _context;
 
         private UserManager<Technician> _userManager;
 
@@ -25,7 +25,7 @@ namespace GoldenTicket.Controllers
         /// </summary>
         /// <param name="context">context of the technician</param>
         /// <param name="userManager">the usermanager</param>
-        public TechniciansController(GoldenTicketContext context, UserManager<Technician> userManager)
+        public TechniciansController(KalahariTicketsContext context, UserManager<Technician> userManager)
         {
             _context = context;
             _userManager = userManager;

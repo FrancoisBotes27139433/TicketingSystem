@@ -1,6 +1,6 @@
 using System;
 
-namespace GoldenTicket.Models.TicketsViewModels
+namespace KalahariTickets.Models.TicketsViewModels
 {
     /// <summary>
     /// Relates time and ticket information.

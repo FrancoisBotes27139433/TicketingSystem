@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace GoldenTicket.Models
+namespace KalahariTickets.Models
 {
     /// <summary>
     /// The pivot table model for many tickets to many technicians and for holding time worked data

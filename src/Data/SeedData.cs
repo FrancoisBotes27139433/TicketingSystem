@@ -1,18 +1,18 @@
-using GoldenTicket.Models;
+using KalahariTickets.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
-namespace GoldenTicket.Data
+namespace KalahariTickets.Data
 {
     /// <summary>
-    /// Utility for seeding a GoldenTicket Context
+    /// Utility for filling tickets from database for now using random "seeds"
     /// </summary>
     public static class SeedData
     {
         private static Technician[] _technicians = {
-            new Technician {
+            /*new Technician {
                 FirstName = "Madeline",
                 LastName = "Booth",
                 IsAdmin = true
@@ -86,11 +86,11 @@ namespace GoldenTicket.Data
                 FirstName = "Rory",
                 LastName = "Clark",
                 IsAdmin = false
-            }
+            }*/
         };
 
         private static Client[] _clients = {
-            new Client {
+            /*new Client {
                 Address = "19 Nicolls Court Rego Park, NY 11374",
                 Company = "Openlane",
                 EmailAddress = "Openlane",
@@ -209,7 +209,7 @@ namespace GoldenTicket.Data
                 FirstName = "Evia",
                 LastName = "Days",
                 PhoneNumber = "(764) 373-1146"
-            }
+            }*/
         };
 
         /// <summary>
@@ -218,7 +218,7 @@ namespace GoldenTicket.Data
         /// <param name="context">context</param>
         /// <param name="userManager">admin</param>
         /// <param name="roleManager"></param>
-        public static void Initialize(GoldenTicketContext context, UserManager<Technician> userManager, RoleManager<IdentityRole> roleManager)
+        public static void Initialize(KalahariTicketsContext context, UserManager<Technician> userManager, RoleManager<IdentityRole> roleManager)
         {
             context.Database.EnsureDeleted();
             context.Database.Migrate();
@@ -236,6 +236,7 @@ namespace GoldenTicket.Data
                 roleManager.CreateAsync(new IdentityRole(DataConstants.AdministratorRole));
             }
 
+
             foreach (var technician in _technicians)
             {
                 technician.DateAdded = DateTime.Now.AddMonths(randGenerator.Next(-36, -25));
@@ -251,6 +252,7 @@ namespace GoldenTicket.Data
 
             context.SaveChanges();
 
+            //Generate random Tickets for now without created database
             foreach (var client in context.Clients)
             {
                 var ticketCount = randGenerator.Next(0, 15);
@@ -272,6 +274,7 @@ namespace GoldenTicket.Data
 
             context.SaveChanges();
 
+            //Technition time worked random for now without created database
             foreach (var ticket in context.Tickets)
             {
                 var workTimesCount = randGenerator.Next(0, 10);

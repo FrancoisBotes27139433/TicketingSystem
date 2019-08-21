@@ -1,12 +1,12 @@
 using System.Threading.Tasks;
-using GoldenTicket.Models;
-using GoldenTicket.Models.AccountViewModels;
+using KalahariTickets.Models;
+using KalahariTickets.Models.AccountViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace GoldenTicket.Controllers
+namespace KalahariTickets.Controllers
 {
     /// <summary>
     /// Controller for accounts

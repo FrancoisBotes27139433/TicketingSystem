@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
-namespace GoldenTicket.Models
+namespace KalahariTickets.Models
 {
     /// <summary>
     /// A Technician and information

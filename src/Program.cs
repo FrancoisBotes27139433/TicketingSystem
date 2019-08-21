@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using GoldenTicket.Data;
-using GoldenTicket.Models;
+using KalahariTickets.Data;
+using KalahariTickets.Models;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace GoldenTicket
+namespace KalahariTickets
 {
     /// <summary>
     /// Our program
@@ -32,7 +32,7 @@ namespace GoldenTicket
             {
                 var services = scope.ServiceProvider;
 
-                var context = services.GetRequiredService<GoldenTicketContext>();
+                var context = services.GetRequiredService<KalahariTicketsContext>();
                 var configuration = services.GetRequiredService<IConfiguration>();
                 var userManager = services.GetRequiredService<UserManager<Technician>>();
                 var roleManager = services.GetService<RoleManager<IdentityRole>>();

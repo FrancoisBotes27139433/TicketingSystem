@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace GoldenTicket.Data.Migrations
+namespace KalahariTickets.Data.Migrations
 {
     /// <summary>
     /// Initialization class

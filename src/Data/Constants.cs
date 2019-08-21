@@ -1,4 +1,4 @@
-namespace GoldenTicket.Data
+namespace KalahariTickets.Data
 {
     /// <summary>
     /// Constant variables for data use.

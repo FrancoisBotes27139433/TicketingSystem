@@ -1,14 +1,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using GoldenTicket.Data;
+using KalahariTickets.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using GoldenTicket.Models.ClientsViewModels;
-using GoldenTicket.Models;
+using KalahariTickets.Models.ClientsViewModels;
+using KalahariTickets.Models;
 
-namespace GoldenTicket.Controllers
+namespace KalahariTickets.Controllers
 {
     /// <summary>
     /// Controller for Clients
@@ -16,13 +16,13 @@ namespace GoldenTicket.Controllers
     [Authorize]
     public partial class ClientsController : Controller
     {
-        private GoldenTicketContext _context;
+        private KalahariTicketsContext _context;
 
         /// <summary>
         /// Initializes _context
         /// </summary>
         /// <param name="context">context of client</param>
-        public ClientsController(GoldenTicketContext context)
+        public ClientsController(KalahariTicketsContext context)
         {
             _context = context;
         }

@@ -1,13 +1,13 @@
-using GoldenTicket.Models;
+using KalahariTickets.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace GoldenTicket.Data
+namespace KalahariTickets.Data
 {
     /// <summary>
-    /// The context for the GoldenTicket Api
+    /// The context for the KalahariTickets Api
     /// </summary>
-    public class GoldenTicketContext : IdentityDbContext<Technician>
+    public class KalahariTicketsContext : IdentityDbContext<Technician>
     {
         /// <summary>
         /// The collection of clients
@@ -29,7 +29,7 @@ namespace GoldenTicket.Data
         /// </summary>
         /// <param name="options">The options to create the context around</param>
         /// <returns>A new instance of this context</returns>
-        public GoldenTicketContext(DbContextOptions<GoldenTicketContext> options) : base(options)
+        public KalahariTicketsContext(DbContextOptions<KalahariTicketsContext> options) : base(options)
         { }
     }
 }

@@ -1,4 +1,4 @@
-namespace GoldenTicket.Models.TicketsViewModels
+namespace KalahariTickets.Models.TicketsViewModels
 {
     /// <summary>
     /// Tech time model

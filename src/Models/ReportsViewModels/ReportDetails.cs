@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace GoldenTicket.Models.ReportsViewModels
+namespace KalahariTickets.Models.ReportsViewModels
 {
     /// <summary>
     /// Information for a report

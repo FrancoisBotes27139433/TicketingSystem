@@ -1,5 +1,5 @@
-﻿using GoldenTicket.Data;
-using GoldenTicket.Models;
+﻿using KalahariTickets.Data;
+using KalahariTickets.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace GoldenTicket
+namespace KalahariTickets
 {
     /// <summary>
     /// The class for starting the application. Gets the HostingEnvironment and Configuration
@@ -41,9 +41,9 @@ namespace GoldenTicket
         {
             services.AddMvc();
 
-            services.AddDbContext<GoldenTicketContext>(options => options.UseSqlite(_configuration["connectionString"]));
+            services.AddDbContext<KalahariTicketsContext>(options => options.UseSqlite(_configuration["connectionString"]));
 
-            services.AddIdentity<Technician, IdentityRole>().AddEntityFrameworkStores<GoldenTicketContext>().AddDefaultTokenProviders();
+            services.AddIdentity<Technician, IdentityRole>().AddEntityFrameworkStores<KalahariTicketsContext>().AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -64,7 +64,7 @@ namespace GoldenTicket
         /// <param name="logger"></param>
         /// <param name="applicationLifetime"></param>
         /// <param name="userManager"></param>
-        public void Configure(IApplicationBuilder app, GoldenTicketContext context, ILogger<Startup> logger, IApplicationLifetime applicationLifetime, UserManager<Technician> userManager)
+        public void Configure(IApplicationBuilder app, KalahariTicketsContext context, ILogger<Startup> logger, IApplicationLifetime applicationLifetime, UserManager<Technician> userManager)
         {
             if (_hostingEnvironment.IsDevelopment())
             {

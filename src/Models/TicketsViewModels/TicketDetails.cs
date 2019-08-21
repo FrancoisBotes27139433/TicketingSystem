@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GoldenTicket.Models.TicketsViewModels
+namespace KalahariTickets.Models.TicketsViewModels
 {
     /// <summary>
     /// ticket details model

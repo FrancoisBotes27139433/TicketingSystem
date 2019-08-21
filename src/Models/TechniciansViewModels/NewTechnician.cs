@@ -1,6 +1,6 @@
 using System;
 
-namespace GoldenTicket.Models.TechniciansViewModels
+namespace KalahariTickets.Models.TechniciansViewModels
 {
     /// <summary>
     /// For adding a new technician

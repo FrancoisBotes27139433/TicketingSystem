@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace GoldenTicket.Models.AccountViewModels
+namespace KalahariTickets.Models.AccountViewModels
 {
     /// <summary>
     /// Login information request model

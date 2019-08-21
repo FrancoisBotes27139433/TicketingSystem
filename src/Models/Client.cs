@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GoldenTicket.Models
+namespace KalahariTickets.Models
 {
     /// <summary>
     /// A client and their related information
