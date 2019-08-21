@@ -12,7 +12,7 @@ namespace KalahariTickets.Data
     public static class SeedData
     {
         private static Technician[] _technicians = {
-            /*new Technician {
+            new Technician {
                 FirstName = "Madeline",
                 LastName = "Booth",
                 IsAdmin = true
@@ -86,11 +86,11 @@ namespace KalahariTickets.Data
                 FirstName = "Rory",
                 LastName = "Clark",
                 IsAdmin = false
-            }*/
+            }
         };
 
         private static Client[] _clients = {
-            /*new Client {
+            new Client {
                 Address = "19 Nicolls Court Rego Park, NY 11374",
                 Company = "Openlane",
                 EmailAddress = "Openlane",
@@ -209,7 +209,7 @@ namespace KalahariTickets.Data
                 FirstName = "Evia",
                 LastName = "Days",
                 PhoneNumber = "(764) 373-1146"
-            }*/
+            }
         };
 
         /// <summary>
