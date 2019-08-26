@@ -7,7 +7,7 @@
 @model TicketDetails
 
 @if (Model.Ticket.IsUrgent) {
-    <h3 class="center red">URGENT</h3>
+    <h3 class="center red black-text">URGENT</h3>
 }
 
 <h3>Ticket Details</h3>
@@ -22,7 +22,7 @@
 
 @if (User.IsInRole(DataConstants.AdministratorRole)) {
 <form asp-action="ToggleUrgent" asp-route-id="@Model.Ticket.Id" method="post">
-    <input class="waves-effect waves-light btn" type="submit" value="Toggle Urgent">
+    <input class="green darken-4 btn" type="submit" value="Toggle Urgent">
 </form>
 }
 
